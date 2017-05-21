@@ -1,0 +1,84 @@
+form {
+  display: none;
+  margin: auto;
+  margin-top: -150px;
+  max-width: 32.5%;
+}
+
+textarea:focus, input:focus {
+  outline: none;
+}
+
+textarea {
+  resize: none;
+  font-size: 15px;
+}
+
+.text_input {
+  border-radius: 3px;
+  background: white;
+  border: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  color: #4A4A4A;
+  width: 100%;
+  margin: 10px auto;
+}
+
+input {
+  font-size: 22px;
+}
+
+form .button {
+  margin-top: -50px;
+}
+
+.project_dropdown {
+  font-family: Tahoma;
+  color: darkgrey;
+  padding-top: 7.5px;
+  padding-bottom: 7.5px;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  font-size: 1.15em;
+}
+
+.project_dropdown div {
+  line-height: 50px;
+  margin: 0;
+  background: white;
+}
+
+.project_option {
+  display: none;
+}
+
+.project_option:hover {
+  background: rgba(75, 75, 75, 0.1);
+}
+
+#image_addition {
+  text-align: center;
+  width: 40%;
+  font-size: 22px;
+  margin-left: 0;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: white;
+}
+
+.img_preview img {
+  display: inline-block;
+  width: 100px;
+}
+
+.img_preview {
+  margin-bottom: 30px;
+}
+
+#image_addition:hover {
+  background: rgba(75, 75, 75, 0.1);
+}

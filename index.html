@@ -1,0 +1,26 @@
+<html>
+
+<head>
+  <link type="text/css" rel="stylesheet" href="src - PULL/css/body.css"></link>
+  <link type="text/css" rel="stylesheet" href="src - PULL/css/elements.css"></link>
+  <script type="text/javascript" src="src - PULL/js/jquery-3.2.1.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $("#view_trigger").click(function() {
+        window.open("src - PULL/index.html", "_self");
+      });
+      $("#contribute_trigger").click(function() {
+        window.open("src - PUSH/index.html", "_self");
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <p class="tahoma" id="title">FRC 2473 Meeting Database</p>
+  <div class="home_options darkgrey tahoma button radial_white" id="view_trigger">View Database</div>
+  <div class="home_options darkgrey tahoma button radial_white" id="contribute_trigger">Contribute</div>
+</body>
+
+</html>

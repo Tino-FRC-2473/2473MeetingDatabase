@@ -1,0 +1,67 @@
+<html>
+
+<head>
+  <link type="text/css" rel="stylesheet" href="css/body.css"></link>
+  <link type="text/css" rel="stylesheet" href="css/elements.css"></link>
+  <link type="text/css" rel="stylesheet" href="css/form.css"></link>
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDS0GRwHYhwkX7q2Z2McPKmBIbtgvCSQ3c",
+      authDomain: "frcdocumentation.firebaseapp.com",
+      databaseURL: "https://frcdocumentation.firebaseio.com",
+      projectId: "frcdocumentation",
+      storageBucket: "frcdocumentation.appspot.com",
+      messagingSenderId: "374556223418"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script type="text/javascript" src="js/backend.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/database.js"></script>
+  <script type="text/javascript" src="js/imgur.js"></script>
+</head>
+
+<body>
+  <div class="panel" id="panel_right"></div>
+  <div class="panel" id="panel_left"></div>
+  <p class="tahoma" id="title">FRC 2473 Documentation Forms</p>
+  <h3 class="tahoma darkgrey" id="back">Back</h3>
+  <div class="darkgrey tahoma button radial_white" id="notes_trigger">Meeting Notes</div>
+  <div class="darkgrey tahoma button radial_white" id="error_trigger">Report Error</div>
+  <form id="notes">
+    <input class="form_element text_input" id="meeting_title" placeholder="Meeting title*"></input>
+    <input class="form_element text_input" id="meeting_date" placeholder="Date*: MM/DD/YYYY"></input>
+    <textarea class="form_element text_input description_input" placeholder="Description*"></textarea>
+    <input class="form_element text_input url_input" placeholder="Any URLs, separated by commas"></input>
+    <div class="form_element project_dropdown" id="notes_dropdown">
+      <div class="option_displayed">&lt Select a Project Option ></div>
+    </div>
+    <div class="tahoma lightgrey form_element" id="image_addition">Add Image</div>
+    <div class="img_preview"></div>
+    <div class="form_element lightgrey darkgrey tahoma button radial_white" style="margin-top: 10px; padding-top: 20px; padding-bottom: 20px; max-width: 25%;">Submit</div>
+    <input type="file" accept="image/*" id="notes_imageUpload" style="display: none;"></input>
+  </form>
+  <form id="error">
+    <input class="form_element text_input" id="date_of_error" placeholder="Date of error meeting: MM/DD/YYYY"></input>
+    <textarea class="form_element text_input description_input" id="error_description" placeholder="Description*"></textarea>
+    <textarea class="form_element text_input description_input" id="solution_known" placeholder="Known solutions(s)"></textarea>
+    <input class="form_element text_input" id="error_message" placeholder="Error Code & Message, Comma Separated"></input>
+    <div class="form_element project_dropdown" id="fatality_dropdown">
+      <div class="option_displayed">&lt Select a Fatality Option ></div>
+      <div class="project_option">Unusable</div>
+      <div class="project_option">Use ill-advised</div>
+      <div class="project_option">Maintain caution through use</div>
+      <div class="project_option">Rare error</div>
+    </div>
+    <div class="form_element project_dropdown" id="project_name_dropdown">
+      <div class="option_displayed">&lt Select a Project Option ></div>
+    </div>
+    <div class="form_element lightgrey darkgrey tahoma button radial_white" style="margin-top: 10px; padding-top: 20px; padding-bottom: 20px; max-width: 25%;">Submit</div>
+    <input type="file" accept="image/*" style="display: none;"></input>
+  </form>
+</body>
+
+</html>

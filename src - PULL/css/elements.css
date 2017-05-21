@@ -1,0 +1,173 @@
+.darkgrey {
+  color: #4A4A4A;
+}
+
+.lightgrey {
+  color: #8A8A8A;
+}
+
+#title {
+  font-size: 50px;
+  /*text-align: center;*/
+  margin-left: 100px;
+  margin-top: 1.5em;
+  margin-bottom: 180px;
+}
+
+.radial_white {
+  border-radius: 14px;
+  background: white;
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+.button {
+  font-size: 25px;
+  padding: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 20px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.button:hover {
+  background: rgba(75, 75, 75, 0.1);
+}
+
+#back {
+  position: absolute;
+  text-decoration: underline;
+  right: 100px;
+  font-weight: 100;
+  top: 250px;
+  display: none;
+  cursor: pointer;
+  color: #8A8A8A;
+}
+
+#back:hover {
+  color: #4A4A4A;
+}
+
+.img_preview img {
+  height: 100px;
+  object-fit: scale-down;
+}
+
+.preview_container {
+  display: none;
+  position: absolute;
+  height: 75%;
+  width: 80%;
+  left: 10%;
+  top: 20%;
+  overflow: scroll;
+  text-align: center;
+}
+
+.meeting_min {
+  width: 30%;
+  line-height: 80px;
+  margin: 30px 30px auto;
+  display: inline-block;
+}
+
+.error_min {
+  width: 30%;
+  line-height: 80px;
+  margin: 30px 30px auto;
+  display: inline-block;
+}
+
+.note_preview {
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.error_preview {
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.expanded {
+  position: absolute;
+  display: none;
+  height: 90%;
+  width: 80%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  top: 5%;
+  left: 7.5%;
+  background: white;
+  border-radius: 5px;
+}
+
+.meeting_img {
+  display: inline-block;
+  height: 150px;
+  width: 100px;
+  object-fit: cover;
+}
+
+.link {
+  display: block;
+}
+
+.meeting_category_heading {
+  font-size: 1.35em;
+}
+
+.error_category_heading {
+  font-size: 1.35em;
+}
+
+.center {
+  text-align: center;
+}
+
+.meeting_title_display {
+  font-size: 3em;
+}
+
+.error_code_display {
+  font-size: 3em;
+}
+
+.expanded p, a {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.meeting_description_display {
+  width: 60%;
+  line-height: 30px;
+}
+
+.error_description_display {
+  width: 60%;
+  line-height: 30px;
+}
+
+.error_solution_display {
+  width: 60%;
+  line-height: 30px;
+}
+
+.home {
+  position: absolute;
+  right: 5%;
+  top: 2%;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.home:hover {
+  color: black;
+}
+
+.lightred {
+  color: #EC644B;
+  text-transform: uppercase;
+}

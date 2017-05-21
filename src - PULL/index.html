@@ -1,0 +1,54 @@
+<html>
+
+<head>
+  <link type="text/css" rel="stylesheet" href="css/body.css"></link>
+  <link type="text/css" rel="stylesheet" href="css/elements.css"></link>
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDS0GRwHYhwkX7q2Z2McPKmBIbtgvCSQ3c",
+      authDomain: "frcdocumentation.firebaseapp.com",
+      databaseURL: "https://frcdocumentation.firebaseio.com",
+      projectId: "frcdocumentation",
+      storageBucket: "frcdocumentation.appspot.com",
+      messagingSenderId: "374556223418"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/data.js"></script>
+  <script type="text/javascript" src="js/backend.js"></script>
+</head>
+
+<body>
+  <div class="home tahoma darkgrey">Home</div>
+  <div class="panel" id="panel_right"></div>
+  <div class="panel" id="panel_left"></div>
+  <p class="tahoma" id="title">FRC 2473 Software Docs</p>
+  <div class="home_options darkgrey tahoma button radial_white" id="notes_trigger">Meeting Notes</div>
+  <div class="home_options darkgrey tahoma button radial_white" id="error_trigger">Errors</div>
+  <div class="preview_container" id="notes_body"></div>
+  <div class="preview_container" id="notes_body_specific"></div>
+  <div class="tahoma expanded" id="notes_expanded" style="font-weight: 100;">
+    <p class="meeting_title_display center">Meeting Title</p>
+    <p class="meeting_date_display center lightgrey">[Insert Date Here]</p>
+    <p class="meeting_category_heading">Description</p>
+    <p class="meeting_description_display lightgrey"></p>
+    <p class="meeting_category_heading" id="images_heading">Images</p>
+    <p class="meeting_category_heading" id="links_heading">Links</p>
+  </div>
+  <div class="preview_container" id="errors_body"></div>
+  <div class="preview_container" id="errors_body_specific"></div>
+  <div class="tahoma expanded" id="error_expanded">
+    <p class="error_code_display center">Error Code</p>
+    <p class="error_fatality_display center lightred">[Insert fatality Here]</p>
+    <p class="error_category_heading">Description</p>
+    <p class="error_description_display lightgrey"></p>
+    <p class="error_category_heading">Known Solutions</p>
+    <p class="error_solution_display lightgrey"></p>
+  </div>
+</body>
+
+</html>
